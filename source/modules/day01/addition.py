@@ -7,6 +7,6 @@ def process(items):
     sum = 0
 
     for item in items:
-        sum = sum + int(item)       
-    
+        sum = sum + int(item)
+
     return sum

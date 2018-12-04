@@ -16,17 +16,11 @@ def strategy2(filename):
     """
     guard_times = Reporter2().produce_data2(filename)
 
-    most = 0
-    key = ()
+    key = max(guard_times, key=guard_times.get)
 
-    for key, value in guard_times.items():
-        guard, time = key
-        if value > most:
-            most = value
-            key = (guard, time)
+    times = guard_times[key]
+    print(f'times: {times}')
 
-    print(most)
-    print(key)
     guard, time = key
     product = guard * time
     print(f'product: {product}')

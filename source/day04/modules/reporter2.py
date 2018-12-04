@@ -57,7 +57,7 @@ class Reporter2:
         filepath = f'data/{filename}-sorted.csv'
 
         C = defaultdict(int)
-        time_by_guards = defaultdict()
+        time_by_guards = defaultdict(list)
         guard = None
         asleep = None
 
@@ -79,11 +79,7 @@ class Reporter2:
                         line = in_file.readline()
                         continue
                     for t in range(asleep, time):
-                        if guard in time_by_guards:
-                            time_by_guards[guard].append(t)
-                        else:
-                            time_by_guards[guard] = []
-                            time_by_guards[guard].append(t)
+                        time_by_guards[guard].append(t)
                         C[guard] += 1
 
                 line = in_file.readline()

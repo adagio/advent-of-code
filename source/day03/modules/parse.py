@@ -1,5 +1,6 @@
 import re
 
+
 def parse(line):
     """
     Given a text

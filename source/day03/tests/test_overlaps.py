@@ -1,7 +1,8 @@
 from unittest import TestCase
 
-from modules.day03.overlaps import how_many_overlaps
-from modules.day03.overlaps import get_non_overlapped_coords
+from modules.overlaps import how_many_overlaps
+from modules.overlaps import get_non_overlapped_coords
+
 
 class OverlapsTestCase(TestCase):
 

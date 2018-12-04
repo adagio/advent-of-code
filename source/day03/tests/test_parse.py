@@ -1,6 +1,7 @@
 from unittest import TestCase
 
-from modules.day03.parse import parse
+from modules.parse import parse
+
 
 class ParseTestCase(TestCase):
 

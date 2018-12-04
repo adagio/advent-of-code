@@ -1,7 +1,7 @@
 from collections import Counter
 
-from modules.day03.claim import DataClassClaim
-from modules.day03.parse import parse
+from modules.claim import DataClassClaim
+from modules.parse import parse
 
 
 def __get_claims(lines):
@@ -31,7 +31,7 @@ def how_many_overlaps(lines):
     claims = __get_claims(lines)
     freqs = __get_coord_freqs(claims)
 
-    total = sum(1 for key,value in freqs.items() if freqs[key] >= 2)
+    total = sum(1 for key, value in freqs.items() if freqs[key] >= 2)
 
     return total
 
@@ -42,7 +42,7 @@ def get_non_overlapped_coords(lines):
     freqs = __get_coord_freqs(claims)
 
     non_overlapped_coords = []
-    for key,value in freqs.items():
+    for key, value in freqs.items():
         if freqs[key] == 1:
             non_overlapped_coords.append(key)
 
@@ -60,15 +60,13 @@ def __are_coords_in_group(coords, group):
             return False
 
 
-
-
 def get_non_overlapped_claim(lines):
 
     claims = __get_claims(lines)
     freqs = __get_coord_freqs(claims)
 
     non_overlapped_coords = []
-    for key,value in freqs.items():
+    for key, value in freqs.items():
         if freqs[key] == 1:
             non_overlapped_coords.append(key)
 

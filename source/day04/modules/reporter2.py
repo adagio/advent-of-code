@@ -1,12 +1,17 @@
 from collections import defaultdict
 
+
 class Reporter2:
 
     def produce_data2(self, filename):
-
+        """
+        Given the prepared and ordered csv file filename
+        returns a dict with the frequencies for each (guard, time)
+        Key: (guard, time)
+        """
         filepath = f'data/{filename}-sorted.csv'
 
-        time_by_guards = defaultdict()
+        time_by_guards = defaultdict(int)
         guard = None
         asleep = None
 
@@ -24,14 +29,11 @@ class Reporter2:
                 elif occurrence == 'FA':
                     asleep = time
                 elif occurrence == 'WU':
-                    if asleep == None:
+                    if asleep is None:
                         line = in_file.readline()
                         continue
                     for t in range(asleep, time):
-                        if (guard, t) in time_by_guards:
-                            time_by_guards[(guard, t)] += 1
-                        else:
-                            time_by_guards[(guard, t)] = 1
+                        time_by_guards[(guard, t)] += 1
 
                 line = in_file.readline()
 
@@ -39,18 +41,16 @@ class Reporter2:
 
     def __get_G_most_asleep(self, C):
         most = None
-        for k,v in C.items():
+        for k, v in C.items():
             if most is None or v > C[most]:
                 most = k
         return most, C[most]
-
 
     def report(self, C):
         worst_guard, minutes = self.__get_G_most_asleep(C)
         print(f'Worst guard: {worst_guard}')
         print(f'Minutes asleep: {minutes}')
         return worst_guard
-
 
     def produce_data(self, filename):
 
@@ -75,7 +75,7 @@ class Reporter2:
                 elif occurrence == 'FA':
                     asleep = time
                 elif occurrence == 'WU':
-                    if asleep == None:
+                    if asleep is None:
                         line = in_file.readline()
                         continue
                     for t in range(asleep, time):

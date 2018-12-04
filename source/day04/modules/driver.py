@@ -1,4 +1,5 @@
 # tasks on ./driver.md
+import re
 from collections import Counter
 
 from modules.utils import Utils
@@ -9,11 +10,15 @@ from modules.reporter2 import Reporter2
 
 
 def strategy2(filename):
+    """
+    Given the prepared and sorted csv file filename
+    Returns the data to answer AOC
+    """
     guard_times = Reporter2().produce_data2(filename)
 
     most = 0
     key = ()
-    for guard,time in guard_times:
+    for guard, time in guard_times:
         value = guard_times[(guard, time)]
         # print(f'{k},{time}: {value}')
         if value > most:
@@ -26,15 +31,16 @@ def strategy2(filename):
     product = guard * time
     print(f'product: {product}')
 
+
 def report(filename):
     C, time_by_guards = Reporter2().produce_data(filename)
-    #print(time_by_guards)
+    # print(time_by_guards)
     worst_guard = Reporter2().report(C)
-    #print(worst_guard)
-    times_by_worst_guard = time_by_guards[worst_guard]
-    #print(times_by_worst_guard)
+    # print(worst_guard)
+    # times_by_worst_guard = time_by_guards[worst_guard]
+    # print(times_by_worst_guard)
     freqs = Counter(time_by_guards[worst_guard])
-    most_asleep_time,_ = freqs.most_common(1)[0]
+    most_asleep_time, _ = freqs.most_common(1)[0]
     product = int(worst_guard) * most_asleep_time
     print(f'product: {product}')
 

@@ -1,6 +1,7 @@
 from unittest import TestCase
 
-from modules.day01.addition import process
+from modules.addition import process
+
 
 class AdditionTestCase(TestCase):
 

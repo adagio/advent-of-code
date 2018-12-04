@@ -1,6 +1,7 @@
 from unittest import TestCase
 
-from modules.day01.firsttwice import process
+from modules.firsttwice import process
+
 
 class FirstTwiceTestCase(TestCase):
 

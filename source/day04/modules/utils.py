@@ -8,6 +8,7 @@ class Utils:
             line = fp.readline()
             items = []
             while line:
+                line = line.strip()
                 items.append(line)
                 line = fp.readline()
             return items

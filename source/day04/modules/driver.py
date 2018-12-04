@@ -18,9 +18,9 @@ def strategy2(filename):
 
     most = 0
     key = ()
-    for guard, time in guard_times:
-        value = guard_times[(guard, time)]
-        # print(f'{k},{time}: {value}')
+
+    for key, value in guard_times.items():
+        guard, time = key
         if value > most:
             most = value
             key = (guard, time)

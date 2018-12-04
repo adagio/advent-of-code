@@ -4,7 +4,7 @@ class Utils:
         pass
 
     def load_items(filepath):
-        with open(filepath) as fp: 
+        with open(filepath) as fp:
             line = fp.readline()
             items = []
             while line:

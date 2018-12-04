@@ -11,7 +11,7 @@ def run():
     """
     Part 2
     """
-    filepath = 'data/day03/input.plain'
+    filepath = 'data/input.plain'
     lines = Utils.load_items(filepath)
     # non_overlapped_coords = get_non_overlapped_coords(lines)
     non_overlapped_claim = get_non_overlapped_claim(lines)
@@ -29,6 +29,9 @@ def run1():
 
 
 def run2():
+    """
+    DataClassClaim initialization with object
+    """
     obj = {
         "id": 1,
         "left_edge": 3,

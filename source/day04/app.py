@@ -1,8 +1,8 @@
 # from modules.driver import prepare
-from modules.driver import report
+# from modules.driver import report
 from modules.driver import strategy2
 
-filename = 'input1'
+filename = 'input'
 # prepare(filename)
-report(filename)
-#strategy2(filename)
+# report(filename)
+strategy2(filename)

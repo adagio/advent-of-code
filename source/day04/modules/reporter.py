@@ -1,7 +1,7 @@
 from collections import Counter
 
-class Reporter:
 
+class Reporter:
 
     def get_freqs_by_date(self, entries):
         """
@@ -13,8 +13,6 @@ class Reporter:
         curr_date = ''
 
         entries_by_date = {}
-
-        freqs = []
 
         curr_date_entries = []
 
@@ -35,7 +33,6 @@ class Reporter:
         entries_by_date[prev_date] = self.get_m_freqs(curr_date_entries)
 
         return entries_by_date
-
 
     def get_m_freqs(self, entries):
         """

@@ -31,6 +31,7 @@ class Reporter2:
                 elif occurrence == 'WU':
                     if asleep is None:
                         # exceptional case
+                        breakpoint()
                         line = in_file.readline()
                         # need to readline() because is exiting this iteration
                         continue

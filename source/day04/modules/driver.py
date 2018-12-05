@@ -35,7 +35,7 @@ def report(filename):
     # print(times_by_worst_guard)
     freqs = Counter(time_by_guards[worst_guard])
     most_asleep_time, _ = freqs.most_common(1)[0]
-    product = int(worst_guard) * most_asleep_time
+    product = worst_guard * most_asleep_time
     print(f'product: {product}')
 
 

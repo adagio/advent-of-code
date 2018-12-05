@@ -21,7 +21,7 @@ class Reporter2:
                 line = line.replace('\n', '')
                 if line == '':
                     break
-                date, time, occurrence = line.split(',')
+                _, time, occurrence = line.split(',')
                 time = int(time)
                 if '#' in occurrence:
                     guard = int(occurrence[1:])
@@ -30,7 +30,9 @@ class Reporter2:
                     asleep = time
                 elif occurrence == 'WU':
                     if asleep is None:
+                        # exceptional case
                         line = in_file.readline()
+                        # need to readline() because is exiting this iteration
                         continue
                     for t in range(asleep, time):
                         time_by_guards[(guard, t)] += 1
@@ -39,15 +41,9 @@ class Reporter2:
 
         return time_by_guards
 
-    def __get_G_most_asleep(self, C):
-        most = None
-        for k, v in C.items():
-            if most is None or v > C[most]:
-                most = k
-        return most, C[most]
-
     def report(self, C):
-        worst_guard, minutes = self.__get_G_most_asleep(C)
+        worst_guard = max(C, key=C.get)
+        minutes = C[worst_guard]
         print(f'Worst guard: {worst_guard}')
         print(f'Minutes asleep: {minutes}')
         return worst_guard
@@ -64,19 +60,21 @@ class Reporter2:
         with open(filepath) as in_file:
             line = in_file.readline()
             while line:
+
                 line = line.replace('\n', '')
-                if line == '':
-                    break
-                date, time, occurrence = line.split(',')
+                _, time, occurrence = line.split(',')
                 time = int(time)
+
                 if '#' in occurrence:
-                    guard = occurrence[1:]
+                    guard = int(occurrence[1:])
                     asleep = None
                 elif occurrence == 'FA':
                     asleep = time
                 elif occurrence == 'WU':
                     if asleep is None:
+                        # exceptional case
                         line = in_file.readline()
+                        # need to readline() because is exiting this iteration
                         continue
                     for t in range(asleep, time):
                         time_by_guards[guard].append(t)

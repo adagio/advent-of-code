@@ -1,7 +1,6 @@
 from string import ascii_lowercase
 
 from modules.event import Event
-from modules.preprocessor import Preprocessor
 
 filename = 'input'
 in_filepath = f'data/{filename}.plain'
@@ -22,8 +21,9 @@ print('Part 2')
 min_len = len(polymer)
 
 for c in ascii_lowercase:
-    preprocessed_polymer = Preprocessor().preprocess(polymer, c)
-    result = Event().trigger_units_of(preprocessed_polymer)
+    opposite_uniy_type = c.swapcase()
+    processed_polymer = polymer.replace(c, '').replace(opposite_uniy_type, '')
+    result = Event().trigger_units_of(processed_polymer)
     result_len = len(result)
     min_len = min(min_len, result_len)
 

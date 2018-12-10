@@ -16,8 +16,9 @@ for line in open(filepath):
     velocity = (int(result['vx']), int(result['vy']))
     velocities.append(velocity)
 
-np_positions = np.array(positions)
-np_velocities = np.array(velocities)
+np_positions = np.array(positions, dtype=tuple)
+np_velocities = np.array(velocities, dtype=tuple)
+# print(np_positions)
 # new_positions = np_positions + np_velocities
 
 def draw():
@@ -26,7 +27,7 @@ def draw():
     for y in range(y_min, y_max + 1):
         line = ''
         for x in range(x_min, x_max + 1):
-            if (x, y) in positions:
+            if [x, y] in np_positions.tolist():
                 line += '#'
             else:
                 line += '.'

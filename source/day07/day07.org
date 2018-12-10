@@ -1,12 +1,12 @@
-* Day 07
+* day07
 
-https://dev.to/rpalo/aoc-day-7-the-sum-of-its-parts-40j0
+[[dev.to day07][https://dev.to/rpalo/aoc-day-7-the-sum-of-its-parts-40j0]]
 
 python solutions by:
 
 ** using *networkx*, by *frohrer*
 
-https://github.com/r0f1/adventofcode2018/blob/master/day_07/day07.ipynb
+[[frohrernb][https://github.com/r0f1/adventofcode2018/blob/master/day_07/day07.ipynb]]
 
 G = nx.DiGraph()
 G.add_edge(...)
@@ -19,7 +19,7 @@ nx.lexicographical_topological_sort(G)
 =for s in map(str.split, lines)=
 
 ** using a *tree*, *bmagnussen*
-https://dev.to/bjarnemagnussen/comment/7d41
+[[dev.to bmagnussen][https://dev.to/bjarnemagnussen/comment/7d41]]
 
 ** *aspittel*
 pure python

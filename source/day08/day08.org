@@ -1,0 +1,15 @@
+* Day 8
+
+** viz
+
+tslater2006
+[reddit
+[[tslater][https://www.reddit.com/r/adventofcode/comments/a4dz3e/day_8_part_2_visualization/]]
+
+mjpieters
+u/zopatista
+[[notebook][https://github.com/mjpieters/adventofcode/blob/master/2018/Day%2008.ipynb]]
+[[notebook injupyter.org][https://nbviewer.jupyter.org/github/mjpieters/adventofcode/blob/master/2018/Day%2008.ipynb]]
+
+
+** 

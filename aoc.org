@@ -1,0 +1,21 @@
+* aoc
+
+** day07
+
+*** part1
+
+**** parse
+
+patterns
+
+**** networkx
+
+lexicographical_topological_sort
+
+*** part2
+
+what
+
+** day08
+
+

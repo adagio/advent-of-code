@@ -16,22 +16,25 @@ for line in open(filepath):
     velocity = (int(result['vx']), int(result['vy']))
     velocities.append(velocity)
 
-np_positions = np.array(positions, dtype=tuple)
-np_velocities = np.array(velocities, dtype=tuple)
-# print(np_positions)
-# new_positions = np_positions + np_velocities
+positions_nda = np.array(positions, dtype=tuple)
+velocities_nda = np.array(velocities, dtype=tuple)
 
-def draw():
-    x_min, y_min = np_positions.min(axis=0)
-    x_max, y_max = np_positions.max(axis=0)
+x_min, y_min = positions_nda.min(axis=0)
+x_max, y_max = positions_nda.max(axis=0)
+
+def draw(positions_nda):
     for y in range(y_min, y_max + 1):
         line = ''
         for x in range(x_min, x_max + 1):
-            if [x, y] in np_positions.tolist():
+            if [x, y] in positions_nda.tolist():
                 line += '#'
             else:
                 line += '.'
         print(line)
 
-draw()
+iterations = 4
+for i in range(iterations):
+    print(f'Iteration: {i}')
+    draw(positions_nda)
+    positions_nda += velocities_nda
 

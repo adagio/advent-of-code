@@ -1,7 +1,8 @@
-mkdir day06
-mkdir day06/tests
+mkdir day07
+mkdir day07/tests
 #touch day06/tests/test_event.py
-mkdir day06/modules
+mkdir day07/modules
 #touch day06/modules/driver.py
-mkdir day06/data
-touch day06/data/input1.plain
+mkdir day07/data
+touch day07/data/input1.plain
+touch day07/data/input.plain

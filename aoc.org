@@ -1,6 +1,6 @@
-* aoc
+* Advent of Code
 
-** day07
+** Day 7
 
 *** part1
 
@@ -16,6 +16,10 @@ lexicographical_topological_sort
 
 what
 
-** day08
+** Day 9
 
+** Day 10: The Stars Align
+
+position
+velocity
 

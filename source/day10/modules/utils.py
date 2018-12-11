@@ -1,6 +1,7 @@
 from parse import parse
 import numpy as np
 
+
 def load_data(filename):
 
     filepath = f'data/{filename}.plain'
@@ -21,3 +22,4 @@ def load_data(filename):
     velocities_nda = np.array(velocities)
 
     return positions_nda, velocities_nda
+

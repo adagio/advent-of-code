@@ -23,3 +23,8 @@ what
 position
 velocity
 
+*** minimize from scipy.optimize
+
+=t = minimize(func, 0, (positions, velocities))=
+=_x = int( np.round(t.x) )=
+

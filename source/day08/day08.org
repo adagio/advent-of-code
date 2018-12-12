@@ -4,7 +4,8 @@ essential part, is to build the tree
 
 use *deque* for popleft()
 
-tree
+based on [[solution by @aspittel][https://dev.to/aspittel/comment/7e75]] on
+dev.to
 
 ** viz
 

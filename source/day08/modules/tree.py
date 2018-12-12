@@ -1,5 +1,8 @@
 class Tree:
-
+    """
+    Base on code by @aspittel
+    https://dev.to/aspittel/comment/7e75
+    """
     def __init__(self, data):
         n_children = data.popleft()
         n_metadata = data.popleft()

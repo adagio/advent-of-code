@@ -32,3 +32,17 @@ pure python
 based on [[code by u/marhoy][https://www.reddit.com/r/adventofcode/comments/a3wmnl/2018_day_7_solutions/ebgd6oc/]]
 on reddit
 
+DiGraph.nodes
+DiGraph.in_degree
+
+#+BEGIN_SRC python
+steps.in_degree(node == 0)
+#+END_SRC
+
+in_degree
+
+returns the in-degree of a node
+
+in-degree: number of edges pointing in to the node
+[[in_degree demo on colab][https://colab.research.google.com/drive/1cdV13AXd-Plyg1yB7pEY0UeXI9-JsW5-]]
+

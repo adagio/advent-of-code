@@ -14,8 +14,9 @@ lexicographical_topological_sort
       
 *** part2
 
-what
-
+DiGraphs
+digraph.nodes
+in_degree
 
 
 ** Day 8

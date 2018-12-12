@@ -1,5 +1,11 @@
 * Day 8
 
+essential part, is to build the tree
+
+use *deque* for popleft()
+
+
+
 ** viz
 
 tslater2006

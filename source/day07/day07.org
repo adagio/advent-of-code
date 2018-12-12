@@ -1,10 +1,12 @@
 * day07
 
+** part 1
+
 [[dev.to day07][https://dev.to/rpalo/aoc-day-7-the-sum-of-its-parts-40j0]]
 
 python solutions by:
 
-** using *networkx*, by *frohrer*
+*** using *networkx*, by *frohrer*
 
 [[frohrernb][https://github.com/r0f1/adventofcode2018/blob/master/day_07/day07.ipynb]]
 
@@ -14,14 +16,19 @@ G.add_edges_from(...)
 
 nx.lexicographical_topological_sort(G)
 
-** *QUINES* adds some mappings
+*** QUINES adds some mappings
 
 =for s in map(str.split, lines)=
 
-** using a *tree*, *bmagnussen*
+*** using a *tree*, *bmagnussen*
 [[dev.to bmagnussen][https://dev.to/bjarnemagnussen/comment/7d41]]
 
-** *aspittel*
+*** aspittel
 pure python
 *few code*
+
+** part 2
+
+based on [[code by u/marhoy][https://www.reddit.com/r/adventofcode/comments/a3wmnl/2018_day_7_solutions/ebgd6oc/]]
+on reddit
 

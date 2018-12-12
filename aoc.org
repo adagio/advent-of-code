@@ -11,12 +11,25 @@ patterns
 **** networkx
 
 lexicographical_topological_sort
-
+      
 *** part2
 
 what
 
+
+
+** Day 8
+
+tree
+
+deque
+
+recursion
+
+
 ** Day 9
+
+ 
 
 ** Day 10: The Stars Align
 

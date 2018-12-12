@@ -4,7 +4,7 @@ essential part, is to build the tree
 
 use *deque* for popleft()
 
-
+tree
 
 ** viz
 

@@ -30,7 +30,12 @@ recursion
 
 ** Day 9
 
- 
+structure: circular lists
+using deque
+=rotate = d.appendleft(d.pop())=
+rotate(7)
+rotate(-1)
+
 
 ** Day 10: The Stars Align
 

@@ -1,0 +1,22 @@
+* Day 9
+
+deque
+
+=circle = deque([0])=  # starts with marble 0
+
+** strategy
+- to loop over the marbles, or the turn?
+
+** to consider *current* marble,
+- the one on the right most position
+- the one at the end
+- right end at the right
+
+** some operations
+
+=circle.pop()=  # pops from the right
+
+=circle.rotate(7)=  # to take the marble 7 positions counter-clockwise
+
+=circle.rotate(-1)=  # to make *current* the marble inmediately on the right
+

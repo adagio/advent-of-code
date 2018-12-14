@@ -1,0 +1,28 @@
+* Day 11
+
+numpy.fromfunction
+location = np.where(windows == maximum
+
+** Theory
+
+g/mjpieters
+u/zopatista
+
+[[nb][https://github.com/mjpieters/adventofcode/blob/master/2018/Day%2011.ipynb]]
+[[][https://docs.scipy.org/doc/numpy/reference/generated/numpy.lib.stride_tricks.as_strided.html]]
+
+** Haskell
+
+Justin Le
+g/mstksg
+
+[[reflections][https://github.com/mstksg/advent-of-code-2018/blob/master/reflections.md#day-11]]
+
+** Math
+
+agent_who_glows
+[[post][https://www.reddit.com/r/adventofcode/comments/a53r6i/2018_day_11_solutions/ebjz4z9/]]
+
+
+
+

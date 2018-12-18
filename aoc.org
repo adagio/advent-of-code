@@ -47,3 +47,15 @@ velocity
 =t = minimize(func, 0, (positions, velocities))=
 =_x = int( np.round(t.x) )=
 
+** Day 11
+
+list.index(obj)
+np.where(ndarray == obj)
+
+** Day 12
+
+*** slice
+*** study trend with matplot defaultdict
+*** controlled recursion
+criteria: stable diff (trend)
+

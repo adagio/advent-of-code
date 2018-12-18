@@ -1,39 +1,17 @@
 from modules.power_level import PowerLevel
 
 
-serial = 7403
+serial = 42 # 42 # 18 # 7403
+gridsize = 300
+ 
+powerLevel = PowerLevel(serial, gridsize)
+#powerLevel.show_max_power_level()  # by window width
 
-"""
-power_tests = {
-    # serial, x, y: power level
-    ( 8, (  3,   5)): 4,
-    (57, (122,  79)): -5,
-    (39, (217, 196)): 0,
-    (71, (101, 153)): 4,
-}
+#mg = powerLevel.max_grid(window_size=200)
+#print(f'{mg}')
 
+x, y, s = powerLevel.optimal_window_size()
+print(f'Part 2: {x},{y},{s}')
 
-for (tserial, cell), expected in power_tests.items():
-    # indexing a [y, x] arranged matrix with 0-based offsets
-    x, y = cell
-    powerLevel = PowerLevel(tserial)
-    power_level_grid = powerLevel.get_power_level_grid()
-    cell_power_level = power_level_grid[x - 1, y - 1]
-    print(cell_power_level)
-    #assert gp == expected
-
-max_tests = {
-    18: (33, 45),
-    42: (21, 61),
-}
-
-for tserial, expected in max_tests.items():
-    powerLevel = PowerLevel(tserial)
-    mg = powerLevel.max_grid()
-    print(f'{mg}')
-    # assert mg == expected
-"""
-
-powerLevel = PowerLevel(serial)
-powerLevel.max_grid()
+#print('fin')
 

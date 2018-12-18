@@ -12,6 +12,7 @@ power_tests = {
     (71, (101, 153)): 4,
 }
 
+print('power tests')
 for (tserial, cell), expected in power_tests.items():
     # indexing a [y, x] arranged matrix with 0-based offsets
     x, y = cell
@@ -24,8 +25,13 @@ max_tests = {
     42: (21, 61),
 }
 
+print('max tests')
 for tserial, expected in max_tests.items():
     mg = max_grid(tserial)
     print(f'{mg}')
     assert mg == expected
+
+serial = 7403
+mg = max_grid(serial)
+print(f'{mg}')
 

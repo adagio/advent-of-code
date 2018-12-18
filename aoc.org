@@ -49,13 +49,15 @@ velocity
 
 ** Day 11
 
+numpy.fromfunction
 list.index(obj)
 np.where(ndarray == obj)
-
+      
 ** Day 12
 
 *** slice
 *** study trend with matplot defaultdict
 *** controlled recursion
 criteria: stable diff (trend)
-
+     
+ 

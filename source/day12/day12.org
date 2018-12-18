@@ -1,0 +1,7 @@
+* Day 12
+
+study trend with matplot defaultdict
+
+controller recursion
+criteria: stable diff (trend)
+

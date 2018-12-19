@@ -1,6 +1,6 @@
 #!/bin/bash
 
-day=day13
+day=day14
 echo $day
 mkdir $day
 touch $day/$day.org
@@ -14,3 +14,4 @@ touch $day/data/input.plain
 touch $day/app.py
 touch $day/study-app.py
 mkdir $day/study
+mkdir $day/sandbox

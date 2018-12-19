@@ -11,7 +11,7 @@ patterns
 **** networkx
 
 lexicographical_topological_sort
-      
+
 *** part2
 
 DiGraphs
@@ -52,12 +52,15 @@ velocity
 numpy.fromfunction
 list.index(obj)
 np.where(ndarray == obj)
-      
+
 ** Day 12
 
 *** slice
 *** study trend with matplot defaultdict
 *** controlled recursion
 criteria: stable diff (trend)
-     
- 
+
+** Day 14
+
+subprocess.call
+

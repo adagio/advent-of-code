@@ -1,0 +1,8 @@
+* Day 14
+
+subprocess.call
+
+array of 2 or 1 digits
+depending if >= 10
+list(map(int( str(number))))
+

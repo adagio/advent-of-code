@@ -1,7 +1,7 @@
 vals = [3, 7]
 a_idx, b_idx = 0, 1
 
-INPUT_SCORE = 0  # 894501
+INPUT_SCORE = 580741  # 894501
 
 
 def get_new_score(a, b):
@@ -13,15 +13,15 @@ def increase_idx(idx):
 
 
 # Part 1
-for _ in range(10 + INPUT_SCORE):
+"""for _ in range(10 + INPUT_SCORE):
     vals += get_new_score(vals[a_idx], vals[b_idx])
     print(vals)
     a_idx, b_idx = increase_idx(a_idx), increase_idx(b_idx)
 
-print(''.join(str(val) for val in vals)[INPUT_SCORE:INPUT_SCORE+10])
+print(''.join(str(val) for val in vals)[INPUT_SCORE:INPUT_SCORE+10])"""
 
 
-"""INPUT_SCORE = str(INPUT_SCORE)
+INPUT_SCORE = str(INPUT_SCORE)
 
 # Part 2
 while True:
@@ -32,4 +32,4 @@ while True:
         to_s = ''.join(str(i) for i in vals)
         print(to_s.find(INPUT_SCORE))
         break
-    a_idx, b_idx = increase_idx(a_idx), increase_idx(b_idx)"""
+    a_idx, b_idx = increase_idx(a_idx), increase_idx(b_idx)

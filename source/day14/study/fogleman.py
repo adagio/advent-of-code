@@ -16,16 +16,16 @@ def step(scores, i, j):
     return (i, j)
 
 
-# part 1
+"""# part 1
 scores, i, j = [3, 7], 0, 1  # initial condition
 # loop until we've scored enough recipes
 while len(scores) < n + 10:
     i, j = step(scores, i, j)
     print(scores)
 # print the 10 scores of interest
-print(''.join(map(str, scores[n:n+10])))
+print(''.join(map(str, scores[n:n+10])))"""
 
-"""# part 2
+# part 2
 scores, i, j = [3, 7], 0, 1 # initial condition
 # extract the individual digits from our input
 digits = list(map(int, str(n)))
@@ -39,4 +39,4 @@ while True:
         break
     if scores[-len(digits):] == digits:
         print(len(scores) - len(digits))
-        break"""
+        break

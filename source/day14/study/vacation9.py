@@ -11,6 +11,6 @@ def doit():
     b = (b + r[b] + 1) % len(r)
 
 
-while '9' not in ''.join(map(str, r[-10:])):
+while '580741' not in ''.join(map(str, r[-10:])):
     doit()
-print(''.join(map(str, r)).index('9'))
+print(''.join(map(str, r)).index('580741'))

@@ -1,9 +1,10 @@
-value = int(open('data/input1.plain').read().strip())
+# value = int(open('data/input1.plain').read().strip())
+value = 580741
 digits = [int(digit) for digit in str(value)]
 scores = [3, 7]
 elf1, elf2 = 0, 1
 
-part1 = True  # change to False for part 2
+part1 = False  # change to False for part 2
 
 while (
     len(scores) < value + 10
@@ -21,3 +22,5 @@ print(
     if part1 else
     len(scores) - len(digits) - (0 if scores[-len(digits):] == digits else 1)
 )
+
+# 18 s
